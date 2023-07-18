@@ -1,1 +1,9 @@
-# flan_t5
+The T5 model, also known as "Text-to-Text Transfer Transformer," was introduced in the paper titled "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer." T5 is built on the Transformer architecture, which has been widely used in various natural language processing (NLP) tasks. However, what sets T5 apart is its innovative approach to framing all NLP tasks as text-to-text problems.
+
+In most traditional NLP models, specific architectures were designed for different tasks, such as text classification, translation, question answering, etc. This approach resulted in separate models for each task, leading to redundancy and inefficiency in the use of computational resources. T5 aims to unify all NLP tasks under a single "text-to-text" framework, where both the input and output of any task are treated as text strings. The model is trained using a massive dataset with various tasks represented in the form of paired input and target text.
+
+The model is then fine-tuned on specific downstream tasks by conditioning it to generate the desired output text given a specific input text. This transfer learning approach allows T5 to be applied to a wide range of NLP tasks with minimal training data.
+
+A sample dataset has been provided, and the model has been trained using the sample dataset for the question and answering task. The dataset consists of only 18 samples, and the results after model training were impressive. The model gave the correct answer when the same trained question has been asked for an unseen document. Similarly, the model can be trained for multiple questions by providing relevant context and instructions.
+
+Its success and flexibility have contributed to the advancement of transfer learning in the NLP field and inspired further research into unified language models.
